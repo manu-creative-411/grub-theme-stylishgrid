@@ -10,13 +10,13 @@ Icons are based on `papirus-icon-theme`.
 
 1. Clone this repo:
 
-```
+```bash
 git clone https://github.com/manu-creative-411/grub-theme-stylishgrid.git
 ```
 
 2. Move the directory somewhere in your disk:
 
-```
+```bash
 sudo mkdir -p /boot/grub/themes
 sudo mv grub-theme-stylishgrid /boot/grub/themes/stylishgrid
 ```
@@ -25,7 +25,7 @@ sudo mv grub-theme-stylishgrid /boot/grub/themes/stylishgrid
 
 3. Config `grub` to use the theme:
 
-```
+```bash
 sudo nano /etc/default/grub
 ```
 
@@ -36,7 +36,7 @@ GRUB_THEME=/boot/grub/themes/stylishgrid/theme.txt
 
 4. Save, exit and update `grub`
 
-```
+```bash
 sudo update-grub # Debian/Ubuntu
 # or
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg # Fedora
